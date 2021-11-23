@@ -1,0 +1,27 @@
+/**
+   File Name: style.less
+   Author   : Maniruzzaman Akash <manirujjamanakash@gmail.com>
+*/
+
+.event-story {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+
+    .event-story-list-content {
+        margin-bottom: 1em;
+        text-align: center;
+
+        .event-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+// Some override style for our template.
+.post-thumbnail, .entry-content .wp-audio-shortcode, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), .default-max-width {
+    max-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
