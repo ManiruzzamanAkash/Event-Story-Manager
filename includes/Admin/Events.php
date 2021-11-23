@@ -129,17 +129,17 @@ class Events {
         switch ( $column ) {
             case 'event_date':
                 $event_date = get_post_meta( $post_id, 'event_date', true );
-                echo $event_date;
+                echo esc_html( $event_date );
                 break;
 
             case 'event_location':
                 $event_location = get_post_meta( $post_id, 'event_location', true );
-                echo $event_location;
+                echo esc_html( $event_location );
                 break;
 
             case 'event_url':
                 $event_url = get_post_meta( $post_id, 'event_url', true );
-                echo $event_url;
+                echo '<a href="'. esc_url( $event_url ) .'" target="_blank"> <i class="dashicons dashicons-admin-links"></i>&nbsp;' . esc_url( $event_url ) . '</a>' ;
                 break;
         }
     }
