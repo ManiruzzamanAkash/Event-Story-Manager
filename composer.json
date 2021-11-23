@@ -1,0 +1,39 @@
+{
+    "name": "maniruzzaman-akash/events-story",
+    "description": "Simple Event Management system",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "platform": {
+        "php": "5.6"
+    },
+    "authors": [
+        {
+            "name": "ManiruzzamanAkash",
+            "email": "manirujjamanakash@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+        "tareq1988/wp-php-cs-fixer": "dev-master",
+        "phpcompatibility/phpcompatibility-wp": "dev-master",
+        "phpunit/phpunit": ">=5.7.27"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akash\\EventsStory\\": "includes/"
+        }
+    },
+    "scripts": {
+        "phpcs": [
+            "phpcs -p -s"
+        ],
+        "phpcbf": [
+            "phpcbf -p"
+        ]
+    }
+}
